@@ -1,0 +1,78 @@
+.v43v table.redactor_list .col1,
+.v43v table.spoiler_list .col1,
+.v43v table.censor_list .col1
+{
+	width:20px!important;
+}
+.v43v table.redactor_list .col2,
+.v43v table.spoiler_list .col2,
+.v43v table.censor_list .col2
+{
+	width:300px!important;
+}
+.v43v table.redactor_list .col3
+{
+	width:120px!important;
+}
+.v43v table.redactor_list .col4
+{
+	width:300px!important;
+}
+.v43v table.redactor_list .col5
+{
+	width:300px!important;
+}
+.v43v table.redactor_list .col6
+{
+	width:50px!important;
+}
+.v43v table.spoiler_list .col3,
+.v43v table.censor_list .col3
+{
+	width:300px!important;
+}
+.v43v table.spoiler_list .col4,
+.v43v table.censor_list .col4
+{
+	width:50px!important;
+}
+span.spoiler,span.censor {
+	border: 1px dotted silver;
+	padding: 0;
+	margin: 0;
+	display: inline;
+	background-position: center left;
+	background-repeat: repeat-x;
+	background-image: url('../images/spoiler.png');
+}
+span.censor
+{
+	background-image: url('../images/censor.png');	
+}
+span.spoiler:hover,span.censor:hover {
+	background-image: none;
+}
+
+span.spoiler span:hover,span.censor span:hover
+{
+	filter: alpha(opacity = 100);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;	
+}
+span.spoiler span,span.censor span {
+	padding: 0;
+	margin: 0;
+	filter: alpha(opacity = 0);
+	-moz-opacity: 0;
+	-khtml-opacity: 0;
+	opacity: 0;
+}
+
+.dcode option.locked {
+	font-style: italic;
+}
+
+.dcode table.buttons button {
+	width: 100px;
+}

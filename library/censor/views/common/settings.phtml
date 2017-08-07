@@ -1,0 +1,50 @@
+<table class="widefat" cellspacing="0">
+	<thead>
+		<tr>
+			<th scope="col" class="manage-column" style="">Phrase</th>
+			<th scope="col" class="manage-column" style="width:150px">Style</th>
+			<th scope="col" class="manage-column" style="">Replacement<small>( Only applies to Swap )</small></th>
+			<th scope="col" class="manage-column" style="">Demo</th>
+			<th scope="col" class="manage-column" style="width:60px">Priority</th>
+			<th scope="col" class="manage-column" style="width:60px">Delete</th>
+		</tr>
+	</thead>
+	<tbody>
+	<?php $cnt=0;foreach($this->censors as $censor):
+	if($censor['phrase']==''):?>
+	</tbody>
+	<tfoot>
+	<?php endif;?>
+		<tr class='<?php echo $this->alternate();?>' valign="top">
+			<td>
+				<input type='text' name='phrases[<?php echo $cnt;?>][phrase]' value='<?php echo $censor['phrase'];?>' style='width:100%'/>
+			</td>
+			<td>
+				<select name='phrases[<?php echo $cnt;?>][style]' style='width:100%'>
+					<option value='blackout'<?php $this->selected($censor['style'],'blackout')?>>Black Out</option>
+					<option value='censor'<?php $this->selected($censor['style'],'censor')?>>Censor</option>
+					<?php if($this->application()->slug!='censor') : ?>
+					<option value='spoiler'<?php $this->selected($censor['style'],'spoiler')?>>Spoiler</option>
+					<?php endif; ?>
+					<option value='swap'<?php $this->selected($censor['style'],'swap')?>>Swap with--&gt;</option>
+				</select>
+			</td>
+			<td>
+				<input type='text' name='phrases[<?php echo $cnt;?>][replacement]' value='<?php echo $censor['replacement'];?>'  style='width:100%'/>
+			</td>
+			<td>
+				<?php if($censor['phrase']!=''):echo apply_filters('the_content','... '.$censor['phrase'].' ... ');endif?>
+			</td>
+			<td>
+				<input type='text' name='phrases[<?php echo $cnt;?>][priority]' value='<?php echo $censor['priority'];?>' style='width:100%'/>
+			</td>
+			<td>
+				<?php if($censor['phrase']!=''):?>
+					<input name='phrases[<?php echo $cnt;?>][delete]' type='checkbox' value = 'Delete'/>
+				<?php endif?>
+			</td>
+		</tr>
+	<?php $cnt++;endforeach;?>
+	</ftoot>
+</table>
+<input type='submit' class='button' value='Apply' />

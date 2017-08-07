@@ -1,0 +1,26 @@
+<td>
+	<input name='phrases[<?php echo $this->cnt;?>][delete]' type='checkbox' value = 'Delete'/>
+</td>
+<td>
+	<input type='text' name='phrases[<?php echo $this->cnt;?>][phrase]' value='<?php echo $this->phrase;?>'/>
+</td>
+<?php if($this->application()->slug=='redactor'):?>
+<td>
+	<select name='phrases[<?php echo $this->cnt;?>][style]'>
+		<option value='blackout'<?php $this->selected($this->style,'blackout')?>>Black Out</option>
+		<option value='censor'<?php $this->selected($this->style,'censor')?>>Censor</option>
+		<option value='spoiler'<?php $this->selected($this->style,'spoiler')?>>Spoiler</option>
+		<option value='swap'<?php $this->selected($this->style,'swap')?>>Swap with--&gt;</option>
+	</select>
+</td>
+<td>
+	<input type='text' name='phrases[<?php echo $this->cnt;?>][replacement]' value='<?php echo $this->replacement;?>''/>
+</td>
+<?php endif;?>
+<td>
+	<?php echo apply_filters('the_content','... '.$this->phrase.' ... ');?>
+</td>
+<td>
+	<input type='text' name='phrases[<?php echo $this->cnt;?>][priority]' value='<?php echo $this->priority;?>'/>
+</td>
+<td></td?>

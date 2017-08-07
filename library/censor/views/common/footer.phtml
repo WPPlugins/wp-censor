@@ -1,0 +1,25 @@
+<th><span class='v43v_icon20x20 v43v_icon_new'></span></th>
+<th>
+	<input type='text' name='phrases[new][phrase]' value='' />
+</th>
+<?php if($this->application()->slug=='redactor'):?>
+<th>
+	<select name='phrases[new][style]'>
+		<option value='blackout'>Black Out</option>
+		<option value='censor'>Censor</option>
+		<?php if($this->application()->slug!='censor') : ?>
+		<option value='spoiler'>Spoiler</option>
+		<?php endif; ?>
+		<option value='swap'>Swap with--&gt;</option>
+	</select>
+</th>
+<th>
+	<input type='text' name='phrases[new][replacement]' value=''/>
+</th>
+<?php endif;?>
+<th>
+</th>
+<th>
+	<input type='text' name='phrases[new][priority]' value='0'/>
+</th>
+<th></th>

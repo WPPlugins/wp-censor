@@ -1,0 +1,38 @@
+{
+	"name":"Censor",
+	"slug":"censor",
+	"wordpress":
+	{
+		"uri":"http://censor.dcoda.co.uk/",
+		"stable_tag":"DISCONTINUED",
+		"wpslug":"wp-censor",
+		"donate_link":"http://censor.dcoda.co.uk/donate/",
+		"short_desc":"Versatile Censor Tool",
+		"tags":
+		[
+			"post",
+			"redact",
+			"results",
+			"hidden",
+			"post",
+			"secret",
+			"reveal",
+			"hide",
+			"censorship",
+			"automatic",
+			"censor"
+		]
+	},
+	"help_meta":
+	{
+		"gettingstarted":
+		{
+			"url":"http://censor.dcoda.co.uk/help/"
+		},
+		"settings":
+		{
+			"url":"http://censor.dcoda.co.uk/help/settings/"
+		}
+	}
+
+}

@@ -1,0 +1,39 @@
+{
+	"classes" :
+	{
+		"application":"wv43v_application",
+		"form":"wv43v_data_form",
+		"table":"wv43v_data_table",
+		"data":"wv43v_data_settings",
+		"legacy":"wv43v_data_legacy",
+		"_load":
+		[
+			"wv43v_info",
+			"wv43v_data_table",
+			"wv43v_view",
+			"wv43v_action",
+			"wv43v_widget",
+			"wv43v_data_settings",
+			"wv43v_data_form",
+			"bv43v_http",
+			"wv43v_mu",
+			"wv43v_posts",
+			"wv43v_blogs",
+			"wv43v_data_legacy",
+			"wv43v_comments",
+			"wv43v_user"
+		]
+	},
+	"folders" : {"w":"library/wordpress"},
+	"wordpress" : 
+	{
+		"author" : "",
+		"stable_tag": "",
+		"author_uri" : "",
+		"uri" : "http:\/\/dcoda.co.uk\/wordpress\/",
+		"at_least" : "3.0.0",
+		"up_to" : "3.3",
+		"tags" : ["php5.2"]
+	},
+	"priority": 40
+}

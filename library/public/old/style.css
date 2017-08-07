@@ -1,0 +1,180 @@
+
+
+/* css/tooltip.css -- fancy tooltips */
+span.tool {
+	display: block;
+	z-index: 100;
+	position: relative;
+	cursor: help;
+}
+
+span.tool span.tip {
+	display: none; /* so is this */
+}
+
+/* tooltip will display on :hover event */
+span.tool:hover span.tip {
+	display: block;
+	z-index: 100;
+	position: absolute;
+	top: 1.6em;
+	left: 0;
+	width: auto;
+	padding: 3px 7px 4px 6px;
+	border: 1px solid #336;
+	background-color: #f7f7ee;
+	font: normal 0.9em/ 1.2em arial, helvetica, sans-serif;
+	text-align: left;
+	color: #000;
+}
+
+#content span.tool::after {
+	padding-left: 2px; /* eye candy */
+	content: url(/img/bubble.gif);
+}
+
+/* css/tooltip.css */
+.v43v {
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+.v43v .err {
+	background-color: #FFEEEB;
+	border: 1px solid #D41700;
+	padding: 5px;
+	margin: 0px;
+}
+
+.v43v div {
+	padding: 0;
+}
+
+.v43v .postbox {
+	
+}
+
+.v43v h3 {
+	margin: 0;
+	padding: 5px;
+}
+
+.v43v .inside {
+	padding: 5px;
+}
+
+.v43v .inside ul {
+	margin-left: 10px;
+	list-style-type: circle;
+	list-style-position: inside;
+}
+
+.v43v .inside ol {
+	margin-left: 10px;
+	list-style-position: inside;
+}
+
+.bv43v_debug {
+	margin: 0;
+	padding: 0;
+	width: 16px;
+	height: 16px;
+	background-color: transparent;
+	color: transparent;
+	overflow: hidden;
+	background-image: url('../images/icon_debug.gif');
+	background-position: center center;
+	background-repeat: no-repeat;
+	cursor: help;
+}
+
+.v43v .admin-menu.v43v_info,.v43v .admin-menu table {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #aaaaaa;
+	-moz-border-radius: 0 0 6px 6px;
+	-webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	border-radius: 6px;
+}
+
+.v43v .admin-menu {
+	padding: 0;
+	margin: 0;
+}
+
+.v43v .admin-menu.v43v_info {
+	padding: 5px;
+	background-color: #FFFFFF;
+}
+
+
+.v43v_menu li {
+	margin: 0;
+	display: inline;
+	padding-left: 5px;
+	padding-right: 4px;
+	border-left: 1px solid #aaaaaa;
+}
+
+.v43v_menu li:first-child {
+	padding-left: 0;
+	border-left: none;
+}
+
+.v43v_menu a {
+	text-decoration: none;
+}
+
+.v43v_current {
+	text-decoration: underline !important;
+	font-weight: bold;
+}
+
+
+a.v43v_plate {
+	min-height: 16px;
+	padding-left: 17px;
+	background-image: url('../images/form.gif');
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+a.v43v_help {
+	min-height: 16px;
+	padding-left: 17px;
+	background-image: url('../images/icon_info.gif');
+	color:#000000;
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+
+.v43v_info ul li {
+	margin-left: 20px;
+	list-style-type: disc;
+}
+
+
+a.v43v_home {
+	min-height: 16px;
+	padding-left: 17px;
+	background-image: url('../images/icon_home.gif');
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+
+a.v43v_forum {
+	min-height: 16px;
+	padding-left: 16px;
+	background-image: url('../images/icon_forum.gif');
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+
+.v43v input[type="text"] {
+	width: 98%;
+}
+
+.v43v col:first-child {
+	width: 150px;
+}
